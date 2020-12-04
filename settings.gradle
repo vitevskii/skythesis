@@ -1,0 +1,15 @@
+/*
+ * Copyright (c) 2019 Haulmont Technology Ltd. All Rights Reserved.
+ * Haulmont Technology proprietary and confidential.
+ * Use is subject to license terms.
+ */
+
+rootProject.name = 'SkyThesis'
+include(':skythesis-global', ':skythesis-core', ':skythesis-gui',
+        ':skythesis-web', ':skythesis-portal', ':skythesis-mobile', ':skythesis-mobile-rest')
+project(':skythesis-global').projectDir = new File(settingsDir, 'modules/global')
+project(':skythesis-core').projectDir = new File(settingsDir, 'modules/core')
+project(':skythesis-gui').projectDir = new File(settingsDir, 'modules/gui')
+project(':skythesis-web').projectDir = new File(settingsDir, 'modules/web')
+project(':skythesis-portal').projectDir = new File(settingsDir, 'modules/portal')
+project(':skythesis-mobile-rest').projectDir = new File(settingsDir, 'modules/mobile-rest')
